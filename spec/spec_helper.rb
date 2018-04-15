@@ -1,5 +1,5 @@
 require 'rspec'
-require_relative '../lib/postcodes'
+require_relative '../lib/nasaapi'
 
 RSpec.configure do |config|
   config.color = true
