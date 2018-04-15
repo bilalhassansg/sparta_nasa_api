@@ -1,5 +1,5 @@
 require_relative 'services/browse'
-require_relative 'services/feed'
+require_relative 'services/nasa_feed'
 require_relative 'services/lookup'
 
 class Nasaio

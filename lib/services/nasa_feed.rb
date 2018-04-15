@@ -20,6 +20,3 @@ class LookupNASA
   end
 
 end
-
-ab = LookupNASA.new
-puts ab.get_lookup(2000433)
