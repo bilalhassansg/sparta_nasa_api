@@ -21,24 +21,19 @@ class LookupNASA
   def get_neo_id
     @lookup_data['neo_reference_id']
   end
-  #
-  # def get_estimated_diameter_min
-  #   @lookup_data['neo']['neo_reference_id']['estimated_diameter']['kilometers']['estimated_diameter_min']
-  # end
-  #
-  # def get_is_potentially_hazardous_asteroid
-  #   @lookup_data['neo_reference_id']['is_potentially_hazardous_asteroid']
-  # end
-  #
-  # def get_orbiting_body
-  #   @lookup_data['neo_reference_id']['orbiting_body']
-  # end
-  #
-  # def get_miss_distance
-  #   @lookup_data['miss_distance']['kilometers']
-  # end
 
+  def get_estimated_diameter_min
+    @lookup_data['estimated_diameter']['kilometers']['estimated_diameter_min']
+  end
+
+  def get_is_potentially_hazardous_asteroid
+    @lookup_data['is_potentially_hazardous_asteroid']
+  end
+
+  # def get_miss_distance
+  #   @lookup_data['estimated_diameter']['miss_distance']['kilometers']
+  # end
 end
 
-ab = LookupNASA.new
-puts ab.get_lookup(2000433)
+# ab = LookupNASA.new
+# puts ab.get_lookup(2000433)

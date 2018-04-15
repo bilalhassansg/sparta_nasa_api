@@ -16,21 +16,17 @@ describe 'NASALookup' do
       expect(@nasa_lookup.get_neo_id).to eq '3542519'
     end
 
-    # it 'should return estimated_diameter_min as a Float' do
-    #   expect(@nasa_lookup.get_estimated_diameter_min).to be_a(Float)
-    # end
-    #
-    # it 'should return is_potentially_hazardous_asteroid as a Boolean' do
-    #   expect(@nasa_lookup.get_is_potentially_hazardous_asteroid).to be_a(Boolean)
-    # end
-    #
-    # it 'should return orbiting_body to equal Venus' do
-    #   expect(@nasa_lookup.get_orbiting_body).to eq 'Venus'
-    # end
-    #
+    it 'should return estimated_diameter_min as a Float' do
+      expect(@nasa_lookup.get_estimated_diameter_min).to be_a(Float)
+    end
+
+    it 'should return is_potentially_hazardous_asteroid as true' do
+      expect(@nasa_lookup.get_is_potentially_hazardous_asteroid).to eq true
+    end
+
     # it 'should return kilometers as an integer and to equal 32568680' do
-    #   exoect(@nasa_lookup.get_miss_distance).to be_a(Integer)
-    #   exoect(@nasa_lookup.get_miss_distance).to eq 32568680
+    #   expect(@nasa_lookup.get_miss_distance).to be_a(String)
+    #   expect(@nasa_lookup.get_miss_distance).to eq '6659916'
     # end
 
   end
