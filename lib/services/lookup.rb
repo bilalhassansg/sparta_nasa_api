@@ -34,17 +34,23 @@ class LookupNASA
     @lookup_data['absolute_magnitude_h']
   end
 
-  def get_close_approach_data
-    @lookup_data['close_approach_data']['close_approach_date']
-  end
+  # def get_close_approach_data
+  #   @lookup_data['close_approach_data']['close_approach_date']
+  # end
 
   def get_estimated_diameter_max
     @lookup_data['estimated_diameter']['kilometers']['estimated_diameter_max']
   end
 
-  # def get_miss_distance
-  #   @lookup_data['estimated_diameter']['miss_distance']['kilometers']
-  # end
+  def get_estimated_diameter_min_meters
+    @lookup_data['estimated_diameter']['meters']['estimated_diameter_min']
+  end
+
+  def get_close_approach_data
+    @lookup_data['close_approach_data']
+  end
+
+
 end
 
 # ab = LookupNASA.new
