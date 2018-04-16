@@ -30,6 +30,18 @@ class LookupNASA
     @lookup_data['is_potentially_hazardous_asteroid']
   end
 
+  def get_absolute_magnitude_h
+    @lookup_data['absolute_magnitude_h']
+  end
+
+  def get_close_approach_data
+    @lookup_data['close_approach_data']['close_approach_date']
+  end
+
+  def get_estimated_diameter_max
+    @lookup_data['estimated_diameter']['kilometers']['estimated_diameter_max']
+  end
+
   # def get_miss_distance
   #   @lookup_data['estimated_diameter']['miss_distance']['kilometers']
   # end

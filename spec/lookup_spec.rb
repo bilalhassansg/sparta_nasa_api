@@ -24,10 +24,14 @@ describe 'NASALookup' do
       expect(@nasa_lookup.get_is_potentially_hazardous_asteroid).to eq true
     end
 
-    # it 'should return kilometers as an integer and to equal 32568680' do
-    #   expect(@nasa_lookup.get_miss_distance).to be_a(String)
-    #   expect(@nasa_lookup.get_miss_distance).to eq '6659916'
-    # end
+    it 'should return absolute_magnitude_h as a float AND the value: 21.8' do
+      expect(@nasa_lookup.get_absolute_magnitude_h).to be_a(Float)
+      expect(@nasa_lookup.get_absolute_magnitude_h).to eq 21.8
+    end
+
+    it 'should return estimated_diameter_max to eq 0.2594418179' do
+      expect(@nasa_lookup.get_estimated_diameter_max).to eq 0.2594418179
+    end
 
   end
 
